@@ -1,0 +1,331 @@
+.footer {
+  margin-top: 80px;
+
+  color: #cbd5e1;
+  background: #0b1120;
+
+  border-top: 1px solid #1e293b;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+
+  margin: 0 auto;
+  padding: 64px 32px 24px;
+}
+
+/* =========================
+   TOP
+========================= */
+
+.top {
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    1fr
+    1.1fr
+    1fr;
+
+  gap: 50px;
+
+  padding-bottom: 60px;
+}
+
+/* =========================
+   BRAND
+========================= */
+
+.brandColumn {
+  max-width: 340px;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 11px;
+
+  color: #fff;
+
+  text-decoration: none;
+}
+
+.logoMark {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 11px;
+
+  color: #fff;
+  background: #d71920;
+
+  font-size: 18px;
+  font-weight: 900;
+  font-style: italic;
+
+  box-shadow:
+    0 8px 25px rgba(215, 25, 32, 0.2);
+}
+
+.logoName {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.description {
+  max-width: 300px;
+
+  margin: 20px 0 22px;
+
+  color: #64748b;
+
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.catalogLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+
+  color: #fff;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.catalogLink:hover {
+  color: #ef4444;
+}
+
+/* =========================
+   COLUMNS
+========================= */
+
+.column {
+  min-width: 0;
+}
+
+.title {
+  margin: 3px 0 20px;
+
+  color: #fff;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+}
+
+.link {
+  width: fit-content;
+
+  color: #64748b;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.link:hover {
+  color: #fff;
+
+  transform: translateX(3px);
+}
+
+/* =========================
+   CONTACTS
+========================= */
+
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #94a3b8;
+
+  font-size: 13px;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.contact:hover {
+  color: #fff;
+}
+
+.contactIcon {
+  width: 32px;
+  height: 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  flex-shrink: 0;
+
+  border: 1px solid #1e293b;
+  border-radius: 9px;
+
+  color: #94a3b8;
+  background: #111827;
+}
+
+/* =========================
+   HOURS
+========================= */
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.hours div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hours span {
+  color: #64748b;
+
+  font-size: 11px;
+}
+
+.hours strong {
+  color: #e2e8f0;
+
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.bottom {
+  min-height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+
+  border-top: 1px solid #1e293b;
+
+  color: #475569;
+
+  font-size: 11px;
+}
+
+.bottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.bottomLinks a {
+  color: #64748b;
+
+  text-decoration: none;
+
+  transition: color 0.2s ease;
+}
+
+.bottomLinks a:hover {
+  color: #fff;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1050px) {
+  .top {
+    grid-template-columns:
+      1.5fr
+      1fr
+      1fr;
+
+    gap: 40px;
+  }
+
+  .brandColumn {
+    grid-column: span 3;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    padding: 48px 20px 20px;
+  }
+
+  .top {
+    grid-template-columns: 1fr 1fr;
+
+    gap: 38px 25px;
+
+    padding-bottom: 40px;
+  }
+
+  .brandColumn {
+    grid-column: span 2;
+  }
+
+  .bottom {
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: center;
+
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .top {
+    grid-template-columns: 1fr;
+  }
+
+  .brandColumn {
+    grid-column: auto;
+  }
+
+  .bottomLinks {
+    flex-direction: column;
+    align-items: flex-start;
+
+    gap: 9px;
+  }
+}

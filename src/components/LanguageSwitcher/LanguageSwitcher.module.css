@@ -1,0 +1,46 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 3px;
+
+  border-radius: 9px;
+
+  background: #f1f5f9;
+}
+
+.button {
+  min-width: 34px;
+  height: 28px;
+
+  padding: 0 8px;
+
+  border: 0;
+  border-radius: 7px;
+
+  color: #64748b;
+  background: transparent;
+
+  font-size: 10px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.button:hover {
+  color: #0f172a;
+}
+
+.active {
+  color: #0f172a;
+
+  background: #fff;
+
+  box-shadow:
+    0 1px 3px rgba(15, 23, 42, 0.08);
+}

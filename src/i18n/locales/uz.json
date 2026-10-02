@@ -1,0 +1,14 @@
+{
+  "common": {
+    "home": "Bosh sahifa",
+    "catalog": "Katalog",
+    "about": "Biz haqimizda",
+    "delivery": "Yetkazib berish va to‘lov",
+    "contacts": "Kontaktlar",
+    "cart": "Savat",
+    "search": "Qidirish",
+    "buy": "Sotib olish",
+    "addToCart": "Savatga qo‘shish",
+    "language": "Til"
+  }
+}

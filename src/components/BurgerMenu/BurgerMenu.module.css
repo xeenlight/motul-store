@@ -1,0 +1,315 @@
+.overlay {
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 1100;
+
+  background: rgba(15, 23, 42, 0.55);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transition:
+    opacity 0.3s ease,
+    visibility 0.3s ease;
+}
+
+.overlayOpen {
+  opacity: 1;
+  visibility: visible;
+}
+
+.drawer {
+  position: fixed;
+
+  top: 0;
+  right: 0;
+  bottom: 0;
+
+  z-index: 1200;
+
+  width: min(88vw, 390px);
+
+  display: flex;
+  flex-direction: column;
+
+  background: #fff;
+
+  box-shadow:
+    -20px 0 60px rgba(15, 23, 42, 0.15);
+
+  transform: translateX(100%);
+
+  transition:
+    transform 0.35s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.drawerOpen {
+  transform: translateX(0);
+}
+
+/* =========================
+   TOP
+========================= */
+
+.drawerHeader {
+  height: 72px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 20px;
+
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.drawerLogo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.drawerLogoName {
+  color: #0f172a;
+
+  font-size: 18px;
+  line-height: 1;
+
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.drawerLogoSub {
+  color: #94a3b8;
+
+  font-size: 8px;
+  line-height: 1;
+
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+.closeButton {
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 11px;
+
+  color: #475569;
+  background: #fff;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.closeButton:hover {
+  color: #0f172a;
+
+  background: #f8fafc;
+
+  border-color: #cbd5e1;
+}
+
+/* =========================
+   CONTENT
+========================= */
+
+.content {
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding: 26px 20px;
+}
+
+.sectionLabel {
+  margin: 0 0 12px 4px;
+
+  color: #94a3b8;
+
+  font-size: 10px;
+  line-height: 1;
+
+  font-weight: 800;
+
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  min-height: 58px;
+
+  padding: 0 16px;
+
+  border-radius: 15px;
+
+  color: #334155;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navLink:hover {
+  color: #0f172a;
+
+  background: #f8fafc;
+
+  transform: translateX(3px);
+}
+
+.navLinkActive {
+  color: #fff;
+
+  background: #d71920;
+
+  box-shadow:
+    0 10px 25px rgba(215, 25, 32, 0.16);
+}
+
+.navLinkActive:hover {
+  color: #fff;
+  background: #d71920;
+
+  transform: none;
+}
+
+.navLeft {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.number {
+  color: #cbd5e1;
+
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.navLinkActive .number {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.navLabel {
+  font-size: 14px;
+  font-weight: 750;
+}
+
+.arrow {
+  opacity: 0;
+
+  transform: translateX(-5px);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease;
+}
+
+.navLink:hover .arrow,
+.navLinkActive .arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* =========================
+   LANGUAGE
+========================= */
+
+.languageSection {
+  margin-top: 30px;
+
+  padding-top: 24px;
+
+  border-top: 1px solid #e5e7eb;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.drawerFooter {
+  flex-shrink: 0;
+
+  padding: 18px 20px;
+
+  border-top: 1px solid #e5e7eb;
+
+  background: #f8fafc;
+}
+
+.footerText {
+  margin: 0;
+
+  color: #64748b;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* =========================
+   DESKTOP
+========================= */
+
+@media (min-width: 901px) {
+  .overlay,
+  .drawer {
+    display: none;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 360px) {
+  .drawer {
+    width: 92vw;
+  }
+
+  .content {
+    padding: 22px 14px;
+  }
+
+  .drawerHeader {
+    padding: 0 14px;
+  }
+
+  .drawerFooter {
+    padding: 16px 14px;
+  }
+}

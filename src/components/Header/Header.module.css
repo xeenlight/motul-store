@@ -1,0 +1,429 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.topLine {
+  width: 100%;
+  height: 3px;
+  background: #d71920;
+}
+
+.headerInner {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.94);
+  border-bottom: 1px solid #e5e7eb;
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  height: 74px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+.logoContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logoMark {
+  position: relative;
+
+  width: 42px;
+  height: 42px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  overflow: hidden;
+
+  background: #d71920;
+  border-radius: 12px;
+
+  box-shadow: 0 7px 20px rgba(215, 25, 32, 0.2);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.logo:hover .logoMark {
+  transform: scale(1.05);
+
+  box-shadow:
+    0 10px 28px rgba(215, 25, 32, 0.3);
+}
+
+.logoLetter {
+  position: relative;
+  z-index: 2;
+
+  color: #fff;
+
+  font-size: 19px;
+  line-height: 1;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.logoCircle {
+  position: absolute;
+
+  width: 32px;
+  height: 32px;
+
+  right: -13px;
+  bottom: -13px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.logoText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.logoName {
+  color: #0f172a;
+
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+}
+
+.logoSub {
+  color: #94a3b8;
+
+  font-size: 8px;
+  line-height: 1;
+
+  font-weight: 800;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+}
+
+/* =========================
+   DESKTOP NAVIGATION
+========================= */
+
+.desktopNav {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.navLink {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  height: 42px;
+
+  padding: 0 14px;
+
+  border-radius: 11px;
+
+  color: #64748b;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.navLink:hover {
+  color: #0f172a;
+  background: #f8fafc;
+}
+
+.navLink::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: 5px;
+
+  width: 0;
+  height: 2px;
+
+  transform: translateX(-50%);
+
+  border-radius: 999px;
+
+  background: #d71920;
+
+  transition: width 0.25s ease;
+}
+
+.navLink:hover::after {
+  width: 12px;
+}
+
+.navLinkActive {
+  color: #d71920;
+}
+
+.navLinkActive::after {
+  width: 20px;
+}
+
+/* =========================
+   RIGHT CONTROLS
+========================= */
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  flex-shrink: 0;
+}
+
+.iconButton {
+  position: relative;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 11px;
+
+  color: #64748b;
+  background: transparent;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.iconButton:hover {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+.iconButton:hover svg {
+  transform: scale(1.08);
+}
+
+.iconButton svg {
+  transition: transform 0.2s ease;
+}
+
+.cartBadge {
+  position: absolute;
+
+  top: -2px;
+  right: -2px;
+
+  min-width: 17px;
+  height: 17px;
+
+  padding: 0 4px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 2px solid #fff;
+  border-radius: 999px;
+
+  color: #fff;
+  background: #d71920;
+
+  font-size: 9px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+/* =========================
+   CATALOG BUTTON
+========================= */
+
+.catalogButton {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+
+  margin-left: 3px;
+
+  height: 40px;
+
+  padding: 0 15px;
+
+  border-radius: 11px;
+
+  color: #fff;
+  background: #0f172a;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.catalogButton:hover {
+  background: #d71920;
+
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 8px 22px rgba(215, 25, 32, 0.18);
+}
+
+/* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menuButton {
+  display: none;
+
+  width: 40px;
+  height: 40px;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 11px;
+
+  color: #334155;
+  background: #fff;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.menuButton:hover {
+  color: #0f172a;
+  background: #f8fafc;
+  border-color: #cbd5e1;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1100px) {
+  .desktopNav {
+    gap: 0;
+  }
+
+  .navLink {
+    padding: 0 10px;
+    font-size: 12px;
+  }
+
+  .catalogButton {
+    display: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .desktopNav {
+    display: none;
+  }
+
+  .menuButton {
+    display: flex;
+  }
+
+  .container {
+    height: 68px;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 64px;
+    padding: 0 14px;
+  }
+
+  .logoText {
+    display: none;
+  }
+
+  .logoMark {
+    width: 40px;
+    height: 40px;
+  }
+
+  .actions {
+    gap: 4px;
+  }
+
+  .iconButton,
+  .menuButton {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+@media (max-width: 360px) {
+  .container {
+    padding: 0 10px;
+  }
+
+  .iconButton,
+  .menuButton {
+    width: 36px;
+    height: 36px;
+  }
+}
