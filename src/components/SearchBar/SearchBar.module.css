@@ -1,0 +1,100 @@
+.wrapper {
+  position: relative;
+
+  width: 100%;
+  max-width: 460px;
+}
+
+.icon {
+  position: absolute;
+
+  left: 16px;
+  top: 50%;
+
+  color: #94a3b8;
+
+  transform: translateY(-50%);
+
+  pointer-events: none;
+}
+
+.input {
+  width: 100%;
+  height: 46px;
+
+  padding:
+    0 44px
+    0 46px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  outline: none;
+
+  color: #0f172a;
+  background: #fff;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.input::placeholder {
+  color: #94a3b8;
+}
+
+.input:focus {
+  border-color: #cbd5e1;
+
+  box-shadow:
+    0 0 0 3px rgba(215, 25, 32, 0.07);
+}
+
+.clearButton {
+  position: absolute;
+
+  top: 50%;
+  right: 12px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 28px;
+  height: 28px;
+
+  padding: 0;
+
+  border: 0;
+  border-radius: 8px;
+
+  color: #64748b;
+  background: transparent;
+
+  cursor: pointer;
+
+  transform: translateY(-50%);
+
+  transition:
+    color 0.2s ease,
+    background 0.2s ease;
+}
+
+.clearButton:hover {
+  color: #0f172a;
+  background: #f1f5f9;
+}
+
+@media (max-width: 600px) {
+  .wrapper {
+    max-width: none;
+  }
+
+  .input {
+    height: 44px;
+  }
+}

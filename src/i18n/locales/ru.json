@@ -9,17 +9,65 @@
     "search": "Поиск",
     "buy": "Купить",
     "addToCart": "В корзину",
-    "language": "Язык"
+    "language": "Язык",
+  "currency": "сум"
   },
 
   "catalog": {
     "label": "MOTUL STORE",
     "description": "Подберите моторное масло для вашего автомобиля, мотоцикла или техники.",
+
     "products": "товаров",
+
     "filters": "Фильтры",
-    "details": "Подробнее",
+    "filterDescription": "Уточните параметры товара",
+
+    "resetFilters": "Сбросить фильтры",
+    "resetAll": "Сбросить всё",
+
+    "searchPlaceholder": "Поиск масла, вязкости или бренда...",
+    "clearSearch": "Очистить поиск",
+
+    "viscosity": "Вязкость",
+    "type": "Тип",
+    "volume": "Объём",
+    "application": "Применение",
+    "brand": "Бренд",
+
+    "allViscosities": "Все вязкости",
+    "allTypes": "Все типы",
+    "allVolumes": "Все объёмы",
+    "allApplications": "Все применения",
+    "allBrands": "Все бренды",
+
     "synthetic": "Синтетика",
     "semiSynthetic": "Полусинтетика",
-    "mineral": "Минеральное"
-  }
+    "mineral": "Минеральное",
+
+    "applications": {
+      "passenger": "Легковые",
+      "motorcycle": "Мото",
+      "transmission": "Трансмиссия",
+      "sport": "Спорт",
+      "garden": "Садовая техника"
+    },
+
+    "noProducts": "Ничего не найдено",
+    "noProductsDescription": "Попробуйте изменить поисковый запрос или параметры фильтра."
+  },
+  "product": {
+  "notFound": "Товар не найден",
+  "notFoundDescription": "Возможно, товар был удалён или указан неверный адрес.",
+  "backToCatalog": "Вернуться в каталог",
+
+  "article": "Артикул",
+  "inStock": "В наличии",
+
+  "description": "Описание",
+  "characteristics": "Характеристики",
+
+  "quantity": "Количество",
+  "addToCart": "В корзину",
+  "total": "Итого"
+}
 }

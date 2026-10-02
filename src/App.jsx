@@ -6,6 +6,7 @@ import {
 
 import Layout from './layouts/Layout'
 import Catalog from './pages/Catalog/Catalog'
+import Product from './pages/Product/Product'
 
 function PlaceholderPage({ title }) {
   return (
@@ -76,6 +77,11 @@ function App() {
               <PlaceholderPage title="Корзина" />
             }
           />
+
+          <Route
+  path="/product/:id"
+  element={<Product />}
+/>
 
         </Route>
 

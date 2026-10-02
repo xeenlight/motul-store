@@ -53,7 +53,7 @@ function ProductCard({ product }) {
 
           <div className={styles.imageOverlay}>
             <span>
-              Подробнее
+{t('catalog.details')}
             </span>
 
             <ArrowUpRight size={15} />
@@ -101,11 +101,11 @@ function ProductCard({ product }) {
           <span className={styles.tag}>
             <Tag size={12} />
 
-            {product.type === 'synthetic'
-              ? 'Synthetic'
-              : product.type === 'semi-synthetic'
-                ? 'Semi'
-                : 'Mineral'}
+{product.type === 'synthetic'
+  ? t('catalog.synthetic')
+  : product.type === 'semi-synthetic'
+    ? t('catalog.semiSynthetic')
+    : t('catalog.mineral')}
           </span>
 
         </div>

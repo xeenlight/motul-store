@@ -101,12 +101,72 @@
   padding: 38px 32px 80px;
 }
 
+/* =========================
+   SEARCH
+========================= */
+
+.searchRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 16px;
+
+  margin-bottom: 14px;
+}
+
+.mobileFilterButton {
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+
+  height: 46px;
+
+  padding: 0 15px;
+
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+
+  color: #334155;
+  background: #fff;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+/* =========================
+   FILTER MOBILE WRAPPER
+========================= */
+
+.filtersMobileOpen {
+  display: block;
+}
+
+.filtersMobileClosed {
+  display: block;
+}
+
+/* =========================
+   TOP BAR
+========================= */
+
 .topBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  margin-bottom: 24px;
+  margin: 25px 0 18px;
+}
+
+.resultInfo {
+  display: flex;
+  align-items: baseline;
 }
 
 .productCount {
@@ -121,62 +181,134 @@
 
   color: #94a3b8;
 
-  font-size: 12px;
+  font-size: 11px;
 }
 
-.filterButton {
-  display: flex;
+.resetAll {
+  display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 5px;
 
-  height: 40px;
+  padding: 7px 9px;
 
-  padding: 0 14px;
+  border: 0;
+  border-radius: 7px;
 
-  border: 1px solid #e2e8f0;
-  border-radius: 10px;
+  color: #d71920;
+  background: #fff1f2;
 
-  color: #334155;
-  background: #fff;
+  font-family: inherit;
 
-  font-size: 12px;
-  font-weight: 700;
+  font-size: 10px;
+  font-weight: 800;
 
-  transition:
-    border-color 0.2s ease,
-    background 0.2s ease,
-    color 0.2s ease;
-}
-
-.filterButton:hover {
-  color: #0f172a;
-
-  border-color: #cbd5e1;
-
-  background: #f8fafc;
+  cursor: pointer;
 }
 
 /* =========================
-   PRODUCT GRID
+   GRID
 ========================= */
 
 .grid {
   display: grid;
 
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns:
+    repeat(4, minmax(0, 1fr));
 
   gap: 18px;
 }
 
 /* =========================
-   RESPONSIVE
+   EMPTY
+========================= */
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 80px 20px;
+
+  text-align: center;
+}
+
+.emptyIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 58px;
+  height: 58px;
+
+  margin-bottom: 18px;
+
+  border-radius: 16px;
+
+  color: #94a3b8;
+  background: #e2e8f0;
+}
+
+.emptyState h2 {
+  margin: 0;
+
+  color: #0f172a;
+
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.emptyState p {
+  max-width: 380px;
+
+  margin: 8px 0 20px;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.emptyButton {
+  padding: 11px 15px;
+
+  border: 0;
+  border-radius: 9px;
+
+  color: #fff;
+  background: #d71920;
+
+  font-family: inherit;
+
+  font-size: 11px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.emptyButton:hover {
+  background: #b9151b;
+
+  transform: translateY(-1px);
+}
+
+/* =========================
+   TABLET
 ========================= */
 
 @media (max-width: 1200px) {
   .grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-columns:
+      repeat(3, minmax(0, 1fr));
   }
 }
+
+/* =========================
+   MOBILE
+========================= */
 
 @media (max-width: 850px) {
   .heroContent {
@@ -188,9 +320,30 @@
   }
 
   .grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
 
     gap: 14px;
+  }
+
+  .searchRow {
+    align-items: stretch;
+  }
+
+  .searchRow > :first-child {
+    flex: 1;
+  }
+
+  .mobileFilterButton {
+    display: flex;
+  }
+
+  .filtersMobileClosed {
+    display: none;
+  }
+
+  .filtersMobileOpen {
+    display: block;
   }
 }
 
@@ -215,5 +368,21 @@
 
   .subtitle {
     font-size: 13px;
+  }
+
+  .searchRow {
+    gap: 8px;
+  }
+
+  .mobileFilterButton {
+    width: 46px;
+
+    padding: 0;
+
+    font-size: 0;
+  }
+
+  .mobileFilterButton svg {
+    flex-shrink: 0;
   }
 }

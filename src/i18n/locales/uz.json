@@ -9,17 +9,65 @@
     "search": "Qidirish",
     "buy": "Sotib olish",
     "addToCart": "Savatga qo‘shish",
-    "language": "Til"
+    "language": "Til",
+  "currency": "so'm"
   },
 
-  "catalog": {
+ "catalog": {
     "label": "MOTUL STORE",
     "description": "Avtomobil, mototsikl yoki texnikangiz uchun motor moyini tanlang.",
+
     "products": "ta mahsulot",
+
     "filters": "Filtrlar",
-    "details": "Batafsil",
+    "filterDescription": "Mahsulot parametrlarini aniqlang",
+
+    "resetFilters": "Filtrlarni tozalash",
+    "resetAll": "Hammasini tozalash",
+
+    "searchPlaceholder": "Moy, yopishqoqlik yoki brendni qidiring...",
+    "clearSearch": "Qidiruvni tozalash",
+
+    "viscosity": "Yopishqoqlik",
+    "type": "Turi",
+    "volume": "Hajmi",
+    "application": "Qo‘llanilishi",
+    "brand": "Brend",
+
+    "allViscosities": "Barcha yopishqoqliklar",
+    "allTypes": "Barcha turlar",
+    "allVolumes": "Barcha hajmlar",
+    "allApplications": "Barcha qo‘llanilishlar",
+    "allBrands": "Barcha brendlar",
+
     "synthetic": "Sintetik",
     "semiSynthetic": "Yarim sintetik",
-    "mineral": "Mineral"
-  }
+    "mineral": "Mineral",
+
+    "applications": {
+      "passenger": "Yengil avtomobil",
+      "motorcycle": "Mototsikl",
+      "transmission": "Transmissiya",
+      "sport": "Sport",
+      "garden": "Bog‘ texnikasi"
+    },
+
+    "noProducts": "Hech narsa topilmadi",
+    "noProductsDescription": "Qidiruv so‘rovini yoki filtr parametrlarini o‘zgartirib ko‘ring."
+  },
+  "product": {
+  "notFound": "Mahsulot topilmadi",
+  "notFoundDescription": "Mahsulot o‘chirilgan yoki manzil noto‘g‘ri ko‘rsatilgan.",
+  "backToCatalog": "Katalogga qaytish",
+
+  "article": "Artikul",
+  "inStock": "Mavjud",
+
+  "description": "Tavsif",
+  "characteristics": "Xususiyatlar",
+
+  "quantity": "Miqdor",
+  "addToCart": "Savatga qo‘shish",
+  "total": "Jami"
+}
 }
