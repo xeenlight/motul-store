@@ -10,5 +10,16 @@
     "buy": "Sotib olish",
     "addToCart": "Savatga qo‘shish",
     "language": "Til"
+  },
+
+  "catalog": {
+    "label": "MOTUL STORE",
+    "description": "Avtomobil, mototsikl yoki texnikangiz uchun motor moyini tanlang.",
+    "products": "ta mahsulot",
+    "filters": "Filtrlar",
+    "details": "Batafsil",
+    "synthetic": "Sintetik",
+    "semiSynthetic": "Yarim sintetik",
+    "mineral": "Mineral"
   }
 }

@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom'
 
 import Layout from './layouts/Layout'
+import Catalog from './pages/Catalog/Catalog'
 
 function PlaceholderPage({ title }) {
   return (
@@ -45,9 +46,7 @@ function App() {
 
           <Route
             path="/catalog"
-            element={
-              <PlaceholderPage title="Каталог" />
-            }
+            element={<Catalog />}
           />
 
           <Route

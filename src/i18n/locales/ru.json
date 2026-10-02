@@ -10,5 +10,16 @@
     "buy": "Купить",
     "addToCart": "В корзину",
     "language": "Язык"
+  },
+
+  "catalog": {
+    "label": "MOTUL STORE",
+    "description": "Подберите моторное масло для вашего автомобиля, мотоцикла или техники.",
+    "products": "товаров",
+    "filters": "Фильтры",
+    "details": "Подробнее",
+    "synthetic": "Синтетика",
+    "semiSynthetic": "Полусинтетика",
+    "mineral": "Минеральное"
   }
 }
