@@ -67,7 +67,29 @@
   "characteristics": "Характеристики",
 
   "quantity": "Количество",
+  "buy": "Купить",
   "addToCart": "В корзину",
   "total": "Итого"
+},
+
+  "footer": {
+    "description": "Оригинальные моторные масла и автохимия для автомобилей и мототехники.",
+    "goToCatalog": "Перейти в каталог",
+    "navigation": "Навигация",
+    "contacts": "Контакты",
+    "workingHours": "Режим работы",
+    "telegram": "Telegram",
+    "location": "Ташкент, Узбекистан",
+    "weekdays": "Пн — Сб",
+    "sunday": "Вс",
+    "delivery": "Доставка и оплата",
+    "allRightsReserved": "Все права защищены."
+  },
+  "common": {
+  "home": "Главная",
+  "catalog": "Каталог",
+  "about": "О нас",
+  "delivery": "Доставка и оплата",
+  "contacts": "Контакты"
 }
 }

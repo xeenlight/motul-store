@@ -37,7 +37,6 @@ function Footer() {
 
   return (
     <footer className={styles.footer}>
-
       <div className={styles.container}>
 
         {/* TOP */}
@@ -60,16 +59,14 @@ function Footer() {
             </Link>
 
             <p className={styles.description}>
-              Оригинальные моторные масла
-              и автохимия для автомобилей
-              и мототехники.
+              {t('footer.description')}
             </p>
 
             <Link
               to="/catalog"
               className={styles.catalogLink}
             >
-              Перейти в каталог
+              {t('footer.goToCatalog')}
 
               <ArrowUpRight size={15} />
             </Link>
@@ -80,7 +77,7 @@ function Footer() {
           <div className={styles.column}>
 
             <h3 className={styles.title}>
-              Навигация
+              {t('footer.navigation')}
             </h3>
 
             <nav className={styles.links}>
@@ -101,7 +98,7 @@ function Footer() {
           <div className={styles.column}>
 
             <h3 className={styles.title}>
-              Контакты
+              {t('footer.contacts')}
             </h3>
 
             <div className={styles.contactList}>
@@ -130,7 +127,7 @@ function Footer() {
                 </span>
 
                 <span>
-                  Telegram
+                  {t('footer.telegram')}
                 </span>
               </a>
 
@@ -140,7 +137,7 @@ function Footer() {
                 </span>
 
                 <span>
-                  Ташкент, Узбекистан
+                  {t('footer.location')}
                 </span>
               </div>
 
@@ -152,13 +149,14 @@ function Footer() {
           <div className={styles.column}>
 
             <h3 className={styles.title}>
-              Режим работы
+              {t('footer.workingHours')}
             </h3>
 
             <div className={styles.hours}>
+
               <div>
                 <span>
-                  Пн — Сб
+                  {t('footer.weekdays')}
                 </span>
 
                 <strong>
@@ -168,13 +166,14 @@ function Footer() {
 
               <div>
                 <span>
-                  Вс
+                  {t('footer.sunday')}
                 </span>
 
                 <strong>
                   10:00 — 18:00
                 </strong>
               </div>
+
             </div>
 
           </div>
@@ -185,24 +184,25 @@ function Footer() {
         <div className={styles.bottom}>
 
           <span>
-            © {new Date().getFullYear()} MOTUL Store.
-            Все права защищены.
+            © {new Date().getFullYear()} MOTUL Store.{' '}
+            {t('footer.allRightsReserved')}
           </span>
 
           <div className={styles.bottomLinks}>
+
             <Link to="/delivery">
-              Доставка и оплата
+              {t('footer.delivery')}
             </Link>
 
             <Link to="/contacts">
-              Контакты
+              {t('common.contacts')}
             </Link>
+
           </div>
 
         </div>
 
       </div>
-
     </footer>
   )
 }

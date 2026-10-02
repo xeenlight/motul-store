@@ -59,7 +59,7 @@
   "notFound": "Mahsulot topilmadi",
   "notFoundDescription": "Mahsulot o‘chirilgan yoki manzil noto‘g‘ri ko‘rsatilgan.",
   "backToCatalog": "Katalogga qaytish",
-
+    "buy": "Xarid qilish",
   "article": "Artikul",
   "inStock": "Mavjud",
 
@@ -69,5 +69,22 @@
   "quantity": "Miqdor",
   "addToCart": "Savatga qo‘shish",
   "total": "Jami"
-}
+},
+
+  "footer": {
+    "description": "Avtomobillar va mototexnika uchun original motor moylari va avtokimyo.",
+    "goToCatalog": "Katalogga o'tish",
+    "navigation": "Navigatsiya",
+    "contacts": "Kontaktlar",
+    "workingHours": "Ish vaqti",
+    "telegram": "Telegram",
+    "location": "Toshkent, O'zbekiston",
+    "weekdays": "Du — Sha",
+    "sunday": "Yak",
+    "delivery": "Yetkazib berish va to'lov",
+    "allRightsReserved": "Barcha huquqlar himoyalangan."
+  }
+
+
+
 }
