@@ -16,7 +16,7 @@
  "catalog": {
     "label": "MOTUL STORE",
     "description": "Avtomobil, mototsikl yoki texnikangiz uchun motor moyini tanlang.",
-
+    "details": "Batafsil",
     "products": "ta mahsulot",
 
     "filters": "Filtrlar",

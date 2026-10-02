@@ -7,6 +7,7 @@ import {
 import Layout from './layouts/Layout'
 import Catalog from './pages/Catalog/Catalog'
 import Product from './pages/Product/Product'
+import { CartProvider } from './context/CartContext'
 
 function PlaceholderPage({ title }) {
   return (
@@ -34,58 +35,60 @@ function PlaceholderPage({ title }) {
 function App() {
   return (
     <BrowserRouter>
-      <Routes>
+      <CartProvider>
+        <Routes>
 
-        <Route element={<Layout />}>
+          <Route element={<Layout />}>
 
-          <Route
-            path="/"
-            element={
-              <PlaceholderPage title="Главная" />
-            }
-          />
+            <Route
+              path="/"
+              element={
+                <PlaceholderPage title="Главная" />
+              }
+            />
 
-          <Route
-            path="/catalog"
-            element={<Catalog />}
-          />
+            <Route
+              path="/catalog"
+              element={<Catalog />}
+            />
 
-          <Route
-            path="/about"
-            element={
-              <PlaceholderPage title="О нас" />
-            }
-          />
+            <Route
+              path="/about"
+              element={
+                <PlaceholderPage title="О нас" />
+              }
+            />
 
-          <Route
-            path="/delivery"
-            element={
-              <PlaceholderPage title="Доставка и оплата" />
-            }
-          />
+            <Route
+              path="/delivery"
+              element={
+                <PlaceholderPage title="Доставка и оплата" />
+              }
+            />
 
-          <Route
-            path="/contacts"
-            element={
-              <PlaceholderPage title="Контакты" />
-            }
-          />
+            <Route
+              path="/contacts"
+              element={
+                <PlaceholderPage title="Контакты" />
+              }
+            />
 
-          <Route
-            path="/cart"
-            element={
-              <PlaceholderPage title="Корзина" />
-            }
-          />
+            <Route
+              path="/cart"
+              element={
+                <PlaceholderPage title="Корзина" />
+              }
+            />
 
-          <Route
-  path="/product/:id"
-  element={<Product />}
-/>
+            <Route
+              path="/product/:id"
+              element={<Product />}
+            />
 
-        </Route>
+          </Route>
 
-      </Routes>
+        </Routes>
+      </CartProvider>
     </BrowserRouter>
   )
 }

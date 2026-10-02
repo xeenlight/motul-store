@@ -7,6 +7,7 @@ import {
   ArrowUpRight,
 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
+import { useCart } from '../../context/CartContext'
 
 import LanguageSwitcher from '../LanguageSwitcher/LanguageSwitcher'
 import BurgerMenu from '../BurgerMenu/BurgerMenu'
@@ -15,6 +16,7 @@ import styles from './Header.module.css'
 
 function Header() {
   const { t } = useTranslation()
+  const { totalItems } = useCart()
 
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
@@ -46,9 +48,7 @@ function Header() {
   }
 
   useEffect(() => {
-    document.body.style.overflow = mobileMenuOpen
-      ? 'hidden'
-      : ''
+    document.body.style.overflow = mobileMenuOpen ? 'hidden' : ''
 
     return () => {
       document.body.style.overflow = ''
@@ -84,7 +84,6 @@ function Header() {
               className={styles.logo}
             >
               <div className={styles.logoContent}>
-
                 <div className={styles.logoMark}>
                   <span className={styles.logoLetter}>
                     M
@@ -102,7 +101,6 @@ function Header() {
                     Motor Oils
                   </span>
                 </div>
-
               </div>
             </Link>
 
@@ -146,26 +144,24 @@ function Header() {
               {/* CART */}
               <Link
                 to="/cart"
-                aria-label={t('common.cart')}
-                className={styles.iconButton}
+                className={styles.cartButton}
+                aria-label={`Корзина: ${totalItems} товаров`}
               >
-                <ShoppingCart
-                  size={19}
-                  strokeWidth={2}
-                />
+                <ShoppingCart size={22} />
 
-                <span className={styles.cartBadge}>
-                  0
-                </span>
+                {totalItems > 0 && (
+                  <span className={styles.cartBadge}>
+                    {totalItems > 99 ? '99+' : totalItems}
+                  </span>
+                )}
               </Link>
 
-              {/* DESKTOP CATALOG */}
+              {/* CATALOG */}
               <Link
                 to="/catalog"
                 className={styles.catalogButton}
               >
                 {t('common.catalog')}
-
                 <ArrowUpRight size={14} />
               </Link>
 
@@ -184,7 +180,6 @@ function Header() {
               </button>
 
             </div>
-
           </div>
         </div>
       </header>

@@ -1,3 +1,4 @@
+
 import { Link } from 'react-router-dom'
 import {
   ShoppingCart,
@@ -5,17 +6,33 @@ import {
   Tag,
 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-
+import { useCart } from '../../context/CartContext'
+import QuantityCounter from '../QuantityCounter/QuantityCounter'
 import styles from './ProductCard.module.css'
 
 function ProductCard({ product }) {
   const { i18n, t } = useTranslation()
+
+  const {
+    items,
+    addToCart,
+    updateQuantity,
+  } = useCart()
+
+  const cartItem = items.find(
+    (item) =>
+      String(item.product.id) === String(product.id)
+  )
+
+  const isInCart = Boolean(cartItem)
+  const quantity = cartItem?.quantity ?? 1
 
   const language = i18n.language?.startsWith('uz')
     ? 'uz'
     : 'ru'
 
   const productName = product.name[language]
+
   const productDescription =
     product.description[language]
 
@@ -53,7 +70,7 @@ function ProductCard({ product }) {
 
           <div className={styles.imageOverlay}>
             <span>
-{t('catalog.details')}
+              {t('catalog.details')}
             </span>
 
             <ArrowUpRight size={15} />
@@ -101,11 +118,11 @@ function ProductCard({ product }) {
           <span className={styles.tag}>
             <Tag size={12} />
 
-{product.type === 'synthetic'
-  ? t('catalog.synthetic')
-  : product.type === 'semi-synthetic'
-    ? t('catalog.semiSynthetic')
-    : t('catalog.mineral')}
+            {product.type === 'synthetic'
+              ? t('catalog.synthetic')
+              : product.type === 'semi-synthetic'
+                ? t('catalog.semiSynthetic')
+                : t('catalog.mineral')}
           </span>
 
         </div>
