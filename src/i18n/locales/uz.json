@@ -83,7 +83,25 @@
     "sunday": "Yak",
     "delivery": "Yetkazib berish va to'lov",
     "allRightsReserved": "Barcha huquqlar himoyalangan."
+  },
+  
+  "cart": {
+    "title": "Savat",
+    "items": "ta mahsulot",
+    "emptyTitle": "Savat bo‘sh",
+    "emptyDescription": "Buyurtma berish uchun katalogdan mahsulot qo‘shing.",
+    "goToCatalog": "Katalogga o‘tish",
+    "backToCatalog": "Katalogga qaytish",
+    "clear": "Savatni tozalash",
+    "remove": "Mahsulotni o‘chirish",
+    "summary": "Buyurtmangiz",
+    "products": "Mahsulotlar soni",
+    "subtotal": "Mahsulotlar narxi",
+    "total": "Jami",
+    "checkout": "Buyurtma berish",
+    "checkoutNote": "Buyurtmani tasdiqlash uchun siz bilan bog‘lanamiz."
   }
+
 
 
 

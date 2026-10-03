@@ -8,7 +8,7 @@ import Layout from './layouts/Layout'
 import Catalog from './pages/Catalog/Catalog'
 import Product from './pages/Product/Product'
 import { CartProvider } from './context/CartContext'
-
+import Cart from './pages/Cart/Cart'
 function PlaceholderPage({ title }) {
   return (
     <section
@@ -73,12 +73,7 @@ function App() {
               }
             />
 
-            <Route
-              path="/cart"
-              element={
-                <PlaceholderPage title="Корзина" />
-              }
-            />
+            <Route path="/cart" element={<Cart />} />
 
             <Route
               path="/product/:id"
