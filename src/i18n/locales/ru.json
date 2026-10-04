@@ -12,7 +12,6 @@
     "language": "Язык",
   "currency": "сум"
   },
-
   "catalog": {
     "label": "MOTUL STORE",
     "description": "Подберите моторное масло для вашего автомобиля, мотоцикла или техники.",
@@ -85,13 +84,7 @@
     "delivery": "Доставка и оплата",
     "allRightsReserved": "Все права защищены."
   },
-  "common": {
-  "home": "Главная",
-  "catalog": "Каталог",
-  "about": "О нас",
-  "delivery": "Доставка и оплата",
-  "contacts": "Контакты"
-},
+
  "cart": {
     "title": "Корзина",
     "items": "товаров",

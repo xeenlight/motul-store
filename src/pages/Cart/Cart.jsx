@@ -9,7 +9,8 @@ import { useTranslation } from 'react-i18next'
 
 import { useCart } from '../../context/CartContext'
 import QuantityCounter from '../../components/QuantityCounter/QuantityCounter'
-
+import { TELEGRAM_CONFIG } from '../../config/telegram'
+import { createTelegramOrder } from '../../utils/createTelegramOrder'
 import styles from './Cart.module.css'
 
 function Cart() {
@@ -29,7 +30,26 @@ function Cart() {
       'common.currency'
     )}`
   }
+const handleCheckout = () => {
+  if (!items.length) return
 
+  const orderText = createTelegramOrder(
+    items,
+    totalPrice
+  )
+
+  const encodedText = encodeURIComponent(orderText)
+
+  const telegramUrl =
+    `https://t.me/${TELEGRAM_CONFIG.botUsername}` +
+    `?text=${encodedText}`
+
+  window.open(
+    telegramUrl,
+    '_blank',
+    'noopener,noreferrer'
+  )
+}
   if (items.length === 0) {
     return (
       <main className={styles.page}>
@@ -213,13 +233,14 @@ function Cart() {
             </div>
 
             <button
-              type="button"
-              className={styles.checkoutButton}
-            >
-              {t('cart.checkout')}
+  type="button"
+  className={styles.checkoutButton}
+  onClick={handleCheckout}
+>
+  {t('cart.checkout')}
 
-              <ArrowRight size={18} />
-            </button>
+  <ArrowRight size={18} />
+</button>
 
             <p className={styles.checkoutNote}>
               {t('cart.checkoutNote')}
