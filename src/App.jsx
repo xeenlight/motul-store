@@ -3,7 +3,7 @@ import {
   Routes,
   Route,
 } from 'react-router-dom'
-
+import Home from './pages/Home/Home'
 import Layout from './layouts/Layout'
 import Catalog from './pages/Catalog/Catalog'
 import Product from './pages/Product/Product'
@@ -42,9 +42,7 @@ function App() {
 
             <Route
               path="/"
-              element={
-                <PlaceholderPage title="Главная" />
-              }
+              element={<Home />}
             />
 
             <Route

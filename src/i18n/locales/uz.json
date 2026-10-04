@@ -100,7 +100,60 @@
     "total": "Jami",
     "checkout": "Buyurtma berish",
     "checkoutNote": "Buyurtmani tasdiqlash uchun siz bilan bog‘lanamiz."
+  },
+
+
+  
+  "home": {
+    "hero": {
+      "eyebrow": "Original moylar · Ishonchli brendlar · Toshkent bo‘ylab yetkazib berish",
+      "title": "Ishonch bilan tanlanadigan motor moyi",
+      "description": "Yengil avtomobillar, tijorat transporti va mototsikllar uchun original motor moylari. Dvigatelingizga mos moyni tanlashda yordam beramiz.",
+      "catalogButton": "Katalogni ko‘rish",
+      "selectionButton": "Moy tanlash"
+    },
+
+    "benefits": {
+      "title": "Nega bizni tanlashadi",
+      "original": {
+        "title": "Original mahsulotlar",
+        "text": "Ishonchli ishlab chiqaruvchilarning sifatli motor moylarini taklif qilamiz."
+      },
+      "selection": {
+        "title": "To‘g‘ri tanlov",
+        "text": "Dvigatel, moy qovushqoqligi va ishlab chiqaruvchi talablarini hisobga olgan holda moy tanlashda yordam beramiz."
+      },
+      "easy": {
+        "title": "Qulay xarid",
+        "text": "Kerakli mahsulotlarni tanlang, savatga qo‘shing va buyurtmani onlayn rasmiylashtiring."
+      },
+      "delivery": {
+        "title": "Toshkent bo‘ylab yetkazib berish",
+        "text": "Ortiqcha vaqt sarflamasdan buyurtmangizni oling — shaharning istalgan hududiga yetkazib beramiz."
+      }
+    },
+
+    "popular": {
+      "eyebrow": "Xaridorlar tanlovi",
+      "title": "Mashhur motor moylari",
+      "description": "Turli dvigatellar va foydalanish sharoitlari uchun sinalgan yechimlar.",
+      "button": "Barcha katalogni ko‘rish"
+    },
+
+    "selection": {
+      "eyebrow": "Tanlashda yordam kerakmi?",
+      "title": "Qaysi moyni tanlashni bilmayapsizmi?",
+      "description": "Motor moyini tanlash faqat qovushqoqlik bilan cheklanmaydi. Dvigatel turi, ishlab chiqaruvchi talablari, foydalanish sharoitlari va avtomobil yurgan masofasini ham hisobga olish muhim.",
+      "button": "Moy tanlash"
+    },
+
+    "cta": {
+      "title": "Dvigatelingizga g‘amxo‘rlikni to‘g‘ri tanlovdan boshlang",
+      "description": "O‘zingizga mos motor moyini tanlang va buyurtmani bir necha bosqichda rasmiylashtiring.",
+      "button": "Katalogga o‘tish"
+    }
   }
+
 
 
 
