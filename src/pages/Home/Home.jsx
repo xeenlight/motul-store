@@ -9,7 +9,7 @@ import {
   ShoppingBag,
 } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
-
+import oilHome from '../../../public/images/oilHome.png'
 import { products } from '../../data/products'
 import ProductCard from '../../components/ProductCard/ProductCard'
 
@@ -83,43 +83,16 @@ function Home() {
             </div>
           </div>
 
-          <div className={styles.heroVisual}>
-            <div className={styles.heroVisualGlow} />
+<div className={styles.heroVisual}>
+  <div className={styles.heroVisualGlow} />
 
-            <div className={styles.heroOilCard}>
-              <div className={styles.oilCardTop}>
-                <span>MOTUL</span>
-                <span>01</span>
-              </div>
-
-              <div className={styles.oilBottle}>
-                <div className={styles.oilBottleCap} />
-
-                <div className={styles.oilBottleBody}>
-                  <span className={styles.oilBrand}>
-                    MOTUL
-                  </span>
-
-                  <span className={styles.oilSeries}>
-                    8100
-                  </span>
-
-                  <span className={styles.oilType}>
-                    X-CESS
-                  </span>
-
-                  <span className={styles.oilViscosity}>
-                    5W-40
-                  </span>
-                </div>
-              </div>
-
-              <div className={styles.oilCardBottom}>
-                <span>100% SYNTHETIC</span>
-                <span>4L</span>
-              </div>
-            </div>
-          </div>
+  <div className={styles.heroImageCard}>
+    <img
+      src={oilHome}
+      alt="MOTUL 8100 X-Cess 5W-40"
+    />
+  </div>
+</div>
         </div>
       </section>
 
