@@ -152,6 +152,167 @@
       "description": "O‘zingizga mos motor moyini tanlang va buyurtmani bir necha bosqichda rasmiylashtiring.",
       "button": "Katalogga o‘tish"
     }
+  },
+  "about": {
+    "hero": {
+      "eyebrow": "Kompaniya haqida",
+      "title": "Siz uchun",
+      "titleAccent": " ishlaydigan moy.",
+      "description": "Biz motor moylarini xarid qilishning oddiy usulini yaratamiz: sifatli mahsulot, tushunarli tanlov va har bir bosqichda yordam.",
+      "catalog": "Katalogni ko‘rish",
+      "contact": "Biz bilan bog‘lanish",
+      "trust": {
+        "brands": "Ishonchli brendlar",
+        "selection": "Tanlashda yordam"
+      },
+      "recommended": "Tavsiya etilgan mahsulot",
+      "quality": "sifat",
+      "delivery": "yetkazib berish"
+    },
+
+    "about": {
+      "eyebrow": "Biz kimmiz",
+      "title": "Shunchaki motor moyi",
+      "titleAccent": " do‘koni emasmiz.",
+      "text1": "Biz motor moyini xarid qilish jarayonini imkon qadar tushunarli qilishni istaymiz. O‘nlab tushunarsiz xususiyatlar va mos kanistrni izlashga ketadigan cheksiz vaqtga hojat yo‘q.",
+      "text2": "Siz avtomobilingiz haqida ma’lumot berasiz — biz mos variantlarni tushunishga va dvigatelingiz talablariga javob beradigan mahsulotni tanlashga yordam beramiz.",
+      "consultation": "Maslahat olish"
+    },
+
+    "stats": {
+      "quality": "sifatga e’tibor",
+      "catalog": "katalogga kirish",
+      "selection": "individual tanlov",
+      "uzbekistan": "O‘zbekiston bo‘ylab yetkazib berish"
+    },
+
+    "advantagesSection": {
+      "eyebrow": "Nega biz",
+      "title": "Kerak bo‘lgan hamma narsa",
+      "titleAccent": " bir joyda.",
+      "description": "Biz sifatli mahsulot, qulay xizmat va insoniy yondashuvni birlashtiramiz."
+    },
+
+    "advantages": {
+      "original": {
+        "title": "Original mahsulotlar",
+        "text": "Faqat ishonchli ishlab chiqaruvchilarning sifatli moylari va avtokimyoviy mahsulotlari bilan ishlaymiz."
+      },
+      "selection": {
+        "title": "Aniq tanlov",
+        "text": "Avtomobil, dvigatel, yurish masofasi va foydalanish sharoitlarini hisobga olgan holda mos moyni tanlashga yordam beramiz."
+      },
+      "delivery": {
+        "title": "Tez yetkazib berish",
+        "text": "Buyurtmalarni tezkor ravishda tayyorlaymiz va Toshkent hamda hududlarga yetkazib berishga topshiramiz."
+      },
+      "quality": {
+        "title": "Tekshirilgan sifat",
+        "text": "Har bir mahsulotning kelib chiqishi va jo‘natishdan oldingi holatini nazorat qilamiz."
+      },
+      "expert": {
+        "title": "Ekspert yondashuvi",
+        "text": "Biz shunchaki moy sotmaymiz — avtomobilingizga aynan nima kerakligini tushunishga yordam beramiz."
+      },
+      "contact": {
+        "title": "Doimo aloqadamiz",
+        "text": "Mahsulot yoki tanlov bo‘yicha savollaringiz bo‘lsa — jamoamiz yordam berishga tayyor."
+      }
+    },
+
+    "process": {
+      "eyebrow": "Bizning yondashuvimiz",
+      "title": "Tanlovdan",
+      "titleAccent": " yetkazib berishgacha.",
+      "badge": "Oddiy jarayon"
+    },
+
+    "steps": {
+      "task": {
+        "title": "Vazifani aniqlaymiz",
+        "text": "Avtomobil, dvigatel, foydalanish sharoitlari va ishlab chiqaruvchi tavsiyalarini aniqlaymiz."
+      },
+      "product": {
+        "title": "Mahsulotni tanlaymiz",
+        "text": "Mos variantlarni qovushqoqlik, ruxsatnomalar, turi va hajmi bo‘yicha taqqoslaymiz."
+      },
+      "order": {
+        "title": "Buyurtmani tekshiramiz",
+        "text": "Jo‘natishdan oldin buyurtma tarkibi va mahsulot holatini tekshiramiz."
+      },
+      "delivery": {
+        "title": "Yetkazib berishga topshiramiz",
+        "text": "Buyurtmani ehtiyotkorlik bilan qadoqlaymiz va mijozga qulay usulda yetkazib berishga topshiramiz."
+      }
+    },
+
+    "categoriesSection": {
+      "eyebrow": "Biz nimalarni taklif qilamiz",
+      "title": "Turli vazifalar uchun.",
+      "titleAccent": " Sifatga yagona yondashuv.",
+      "catalog": "To‘liq katalog"
+    },
+
+    "categories": {
+      "cars": {
+        "title": "Yengil avtomobillar",
+        "text": "Zamonaviy benzin va dizel dvigatellari uchun moylar."
+      },
+      "commercial": {
+        "title": "Tijorat transporti",
+        "text": "Yuqori yuklama va katta yurish masofasiga ega avtomobillar uchun yechimlar."
+      },
+      "motorcycles": {
+        "title": "Mototsikllar",
+        "text": "4 taktli va 2 taktli dvigatellar uchun maxsus moylar."
+      }
+    },
+
+    "trust": {
+      "eyebrow": "Bizning tamoyilimiz",
+      "title": "Yaxshi moy —",
+      "titleAccent": " dvigatel uchun xotirjamlik.",
+      "description": "Shuning uchun bizning maqsadimiz shunchaki sizga kanistr sotish emas. Vazifamiz — to‘g‘ri tanlov qilishga va ishonchli mahsulot olishga yordam berish.",
+      "points": {
+        "selection": "Tushunarli tanlov",
+        "products": "Tekshirilgan mahsulotlar",
+        "delivery": "Qulay yetkazib berish"
+      },
+      "focus": "sifatga e’tibor"
+    },
+
+    "faqSection": {
+      "title": "Ko‘p beriladigan",
+      "titleAccent": " savollar.",
+      "intro": "Javobni topa olmadingizmi? Biz bilan bog‘laning — albatta yordam beramiz.",
+      "ask": "Savol berish"
+    },
+
+    "faq": {
+      "choose": {
+        "question": "Mos motor moyini qanday tanlash mumkin?",
+        "answer": "Eng to‘g‘ri yo‘l — avtomobil ishlab chiqaruvchisining tavsiyalari va talab qilinadigan ruxsatnomalarga amal qilish. Tanlovga ishonchingiz komil bo‘lmasa, biz bilan bog‘laning — mos variantni tanlashga yordam beramiz."
+      },
+      "original": {
+        "question": "Siz original mahsulotlarni sotasizmi?",
+        "answer": "Ha. Biz mahsulotlarning kelib chiqishiga alohida e’tibor beramiz va ishonchli yetkazib beruvchilar bilan ishlaymiz."
+      },
+      "delivery": {
+        "question": "O‘zbekiston bo‘ylab yetkazib berish bormi?",
+        "answer": "Ha, biz Toshkent va O‘zbekiston hududlaridagi buyurtmalar bilan ishlaymiz. Yetkazib berish shartlari shahar va buyurtmaga qarab farq qiladi."
+      },
+      "consultation": {
+        "question": "Xariddan oldin maslahat olish mumkinmi?",
+        "answer": "Albatta. Avtomobilingiz xususiyatlarini yozing yoki VIN raqamini yuboring — mos mahsulotni aniqlashga yordam beramiz."
+      }
+    },
+
+    "finalCta": {
+      "eyebrow": "Moy tanlashga tayyormisiz?",
+      "title": "Avtomobilingiz uchun",
+      "titleAccent": " mos mahsulotni toping.",
+      "button": "Katalogga o‘tish"
+    }
   }
 
 
