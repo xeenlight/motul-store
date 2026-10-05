@@ -5,7 +5,7 @@
 }
 
 .container {
-  width: min(1200px, calc(100% - 40px));
+  width: min(1440px, calc(100% - 64px));
   margin: 0 auto;
 }
 
@@ -29,10 +29,10 @@
 .hero::before {
   content: '';
   position: absolute;
-  width: 600px;
-  height: 600px;
-  right: -250px;
-  top: -280px;
+  width: 420px;
+  height: 420px;
+  right: -180px;
+  top: -220px;
   border-radius: 50%;
   border: 1px solid rgba(215, 25, 32, 0.08);
   pointer-events: none;
@@ -41,44 +41,49 @@
 .heroGrid {
   min-height: 680px;
   display: grid;
-  grid-template-columns: 1fr 0.9fr;
+  grid-template-columns: 1.05fr 0.95fr;
   align-items: center;
-  gap: 70px;
-  padding: 80px 0;
+  gap: 50px;
+  padding: 80px 0 70px;
 }
 
 .heroContent {
   position: relative;
   z-index: 2;
+  max-width: 700px;
 }
 
 .eyebrow,
 .sectionEyebrow {
   display: inline-flex;
   align-items: center;
-  gap: 9px;
+  gap: 7px;
   color: #d71920;
-  font-size: 12px;
-  font-weight: 800;
-  letter-spacing: 0.14em;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
   text-transform: uppercase;
 }
 
+.eyebrow {
+  margin-bottom: 18px;
+}
+
 .eyebrowDot {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #d71920;
-  box-shadow: 0 0 0 5px rgba(215, 25, 32, 0.1);
+  box-shadow: 0 0 0 4px rgba(215, 25, 32, 0.08);
 }
 
 .heroTitle {
-  max-width: 680px;
-  margin: 22px 0 0;
-  font-size: clamp(52px, 6vw, 82px);
+  max-width: 760px;
+  margin: 0;
+  font-size: clamp(42px, 5vw, 72px);
   line-height: 0.98;
   letter-spacing: -0.055em;
-  font-weight: 850;
+  font-weight: 900;
 }
 
 .heroTitle span {
@@ -88,30 +93,30 @@
 
 .heroText {
   max-width: 590px;
-  margin: 28px 0 0;
+  margin: 24px 0 0;
   color: #64748b;
-  font-size: 18px;
-  line-height: 1.7;
+  font-size: 15px;
+  line-height: 1.75;
 }
 
 .heroActions {
   display: flex;
   align-items: center;
-  gap: 12px;
-  margin-top: 36px;
+  gap: 10px;
+  margin-top: 34px;
 }
 
 .primaryButton,
 .secondaryButton {
-  min-height: 52px;
+  min-height: 48px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-  padding: 0 22px;
-  border-radius: 11px;
-  font-size: 14px;
-  font-weight: 750;
+  gap: 9px;
+  padding: 0 18px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: 800;
   text-decoration: none;
   transition:
     transform 0.25s ease,
@@ -146,16 +151,17 @@
 .heroTrust {
   display: flex;
   flex-wrap: wrap;
-  gap: 22px;
+  gap: 16px;
   margin-top: 28px;
 }
 
 .trustItem {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
   color: #64748b;
-  font-size: 12px;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 .trustItem svg {
@@ -168,7 +174,7 @@
 
 .heroVisual {
   position: relative;
-  min-height: 520px;
+  min-height: 540px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -186,14 +192,14 @@
 .visualCard {
   position: relative;
   z-index: 2;
-  width: min(100%, 430px);
-  min-height: 500px;
+  width: min(100%, 330px);
+  min-height: 460px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 22px;
   border: 1px solid #e2e8f0;
-  border-radius: 28px;
+  border-radius: 22px;
   background: rgba(255, 255, 255, 0.9);
   box-shadow:
     0 30px 80px rgba(15, 23, 42, 0.1),
@@ -216,9 +222,9 @@
   align-items: center;
   justify-content: space-between;
   color: #64748b;
-  font-size: 10px;
-  font-weight: 800;
-  letter-spacing: 0.15em;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 0.14em;
 }
 
 .visualTop svg {
@@ -230,12 +236,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 30px;
+  padding: 24px;
 }
 
 .visualImage img {
   width: 82%;
-  height: 360px;
+  height: 330px;
   object-fit: contain;
   filter: drop-shadow(20px 25px 22px rgba(15, 23, 42, 0.18));
   transition: transform 0.4s ease;
@@ -249,28 +255,30 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 15px;
-  padding-top: 18px;
+  gap: 12px;
+  padding-top: 16px;
   border-top: 1px solid #e2e8f0;
 }
 
 .visualBottom strong {
   display: block;
-  margin-top: 4px;
-  font-size: 17px;
+  margin-top: 3px;
+  font-size: 15px;
+  font-weight: 800;
 }
 
 .visualLabel {
   color: #94a3b8;
-  font-size: 10px;
+  font-size: 9px;
+  font-weight: 700;
 }
 
 .visualBadge {
-  padding: 8px 11px;
+  padding: 6px 9px;
   border-radius: 8px;
   color: #d71920;
   background: rgba(215, 25, 32, 0.08);
-  font-size: 12px;
+  font-size: 11px;
   font-weight: 800;
 }
 
@@ -280,7 +288,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 12px 15px;
+  padding: 12px 14px;
   border: 1px solid #e2e8f0;
   border-radius: 13px;
   background: rgba(255, 255, 255, 0.95);
@@ -294,14 +302,15 @@
 
 .floatingCard strong {
   display: block;
-  font-size: 13px;
+  font-size: 12px;
+  font-weight: 800;
 }
 
 .floatingCard span {
   display: block;
   margin-top: 2px;
   color: #94a3b8;
-  font-size: 9px;
+  font-size: 10px;
 }
 
 .floatingTop {
@@ -319,23 +328,24 @@
 ========================= */
 
 .aboutSection {
-  padding: 120px 0;
+  padding: 100px 0;
   background: #ffffff;
 }
 
 .aboutGrid {
   display: grid;
   grid-template-columns: 0.9fr 1fr;
-  gap: 100px;
+  gap: 60px;
   align-items: start;
 }
 
 .sectionTitle {
   max-width: 700px;
-  margin: 16px 0 0;
-  font-size: clamp(38px, 4vw, 56px);
-  line-height: 1.05;
-  letter-spacing: -0.045em;
+  margin: 10px 0 0;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 900;
 }
 
 .sectionTitle span {
@@ -343,24 +353,24 @@
 }
 
 .aboutText {
-  padding-top: 30px;
+  padding-top: 24px;
 }
 
 .aboutText p {
-  margin: 0 0 20px;
+  margin: 0 0 16px;
   color: #64748b;
-  font-size: 16px;
-  line-height: 1.8;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .inlineLink {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  margin-top: 12px;
+  gap: 6px;
+  margin-top: 10px;
   color: #d71920;
-  font-size: 14px;
-  font-weight: 750;
+  font-size: 12px;
+  font-weight: 800;
   text-decoration: none;
 }
 
@@ -371,17 +381,17 @@
 .statsGrid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 70px;
+  margin-top: 48px;
   border-top: 1px solid #e2e8f0;
   border-bottom: 1px solid #e2e8f0;
 }
 
 .statCard {
-  min-height: 150px;
+  min-height: 130px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 25px;
+  padding: 22px;
   border-right: 1px solid #e2e8f0;
 }
 
@@ -394,17 +404,17 @@
 }
 
 .statNumber {
-  font-size: 34px;
-  font-weight: 850;
+  font-size: 28px;
+  font-weight: 900;
   letter-spacing: -0.04em;
 }
 
 .statLabel {
   max-width: 130px;
-  margin-top: 8px;
+  margin-top: 6px;
   color: #94a3b8;
   font-size: 11px;
-  line-height: 1.4;
+  line-height: 1.45;
 }
 
 /* =========================
@@ -412,22 +422,22 @@
 ========================= */
 
 .advantages {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .sectionHeader {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  gap: 50px;
-  margin-bottom: 55px;
+  gap: 40px;
+  margin-bottom: 38px;
 }
 
 .sectionHeader > p {
-  max-width: 390px;
+  max-width: 400px;
   margin: 0;
   color: #64748b;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.7;
 }
 
@@ -439,11 +449,11 @@
 
 .advantageCard {
   position: relative;
-  min-height: 270px;
-  padding: 27px;
+  min-height: 240px;
+  padding: 24px;
   overflow: hidden;
   border: 1px solid #e2e8f0;
-  border-radius: 18px;
+  border-radius: 16px;
   background: #ffffff;
   transition:
     transform 0.3s ease,
@@ -458,8 +468,8 @@
 }
 
 .advantageIcon {
-  width: 44px;
-  height: 44px;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -470,31 +480,33 @@
 
 .cardNumber {
   position: absolute;
-  top: 25px;
-  right: 25px;
+  top: 22px;
+  right: 22px;
   color: #cbd5e1;
   font-size: 11px;
   font-weight: 800;
 }
 
 .advantageCard h3 {
-  margin: 32px 0 10px;
-  font-size: 17px;
+  margin: 28px 0 8px;
+  font-size: 15px;
+  font-weight: 900;
   letter-spacing: -0.02em;
+  line-height: 1.3;
 }
 
 .advantageCard p {
   max-width: 320px;
   margin: 0;
   color: #64748b;
-  font-size: 13px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
 .cardArrow {
   position: absolute;
-  right: 25px;
-  bottom: 25px;
+  right: 22px;
+  bottom: 22px;
   color: #cbd5e1;
   transition:
     color 0.25s ease,
@@ -511,7 +523,7 @@
 ========================= */
 
 .process {
-  padding: 120px 0;
+  padding: 100px 0;
   background: #ffffff;
   border-top: 1px solid #e2e8f0;
   border-bottom: 1px solid #e2e8f0;
@@ -521,19 +533,21 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  gap: 30px;
 }
 
 .processBadge {
   display: flex;
   align-items: center;
-  gap: 8px;
-  padding: 9px 13px;
+  gap: 6px;
+  padding: 8px 12px;
   border: 1px solid #e2e8f0;
   border-radius: 999px;
   color: #64748b;
   background: #f8fafc;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
+  white-space: nowrap;
 }
 
 .processBadge svg {
@@ -543,12 +557,12 @@
 .timeline {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  margin-top: 70px;
+  margin-top: 48px;
 }
 
 .step {
   position: relative;
-  padding-right: 35px;
+  padding-right: 28px;
 }
 
 .stepTop {
@@ -580,19 +594,21 @@
 }
 
 .stepContent {
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 .stepContent h3 {
   margin: 0;
-  font-size: 17px;
+  font-size: 15px;
+  font-weight: 900;
+  line-height: 1.3;
 }
 
 .stepContent p {
-  margin: 11px 0 0;
+  margin: 8px 0 0;
   color: #64748b;
-  font-size: 13px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
 /* =========================
@@ -600,7 +616,7 @@
 ========================= */
 
 .categories {
-  padding: 120px 0;
+  padding: 100px 0;
 }
 
 .categoriesGrid {
@@ -610,13 +626,13 @@
 }
 
 .categoryCard {
-  min-height: 290px;
+  min-height: 260px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 28px;
+  padding: 24px;
   border: 1px solid #e2e8f0;
-  border-radius: 20px;
+  border-radius: 16px;
   background: #ffffff;
   color: #0f172a;
   text-decoration: none;
@@ -645,36 +661,38 @@
 }
 
 .categoryIcon {
-  width: 50px;
-  height: 50px;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 14px;
+  border-radius: 11px;
   color: #d71920;
   background: rgba(215, 25, 32, 0.08);
 }
 
 .categoryCard h3 {
-  margin: 30px 0 10px;
-  font-size: 20px;
+  margin: 24px 0 8px;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.02em;
 }
 
 .categoryCard p {
-  max-width: 330px;
+  max-width: 320px;
   margin: 0;
   color: #64748b;
-  font-size: 13px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.65;
 }
 
 .categoryArrow {
-  width: 38px;
-  height: 38px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 25px;
+  margin-top: 20px;
   border-radius: 50%;
   color: #0f172a;
   background: #f1f5f9;
@@ -695,16 +713,16 @@
 ========================= */
 
 .trustSection {
-  padding: 0 0 120px;
+  padding: 0 0 100px;
 }
 
 .trustBox {
   position: relative;
-  min-height: 440px;
+  min-height: 400px;
   display: grid;
   grid-template-columns: 1fr 0.8fr;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 22px;
   background: #0f172a;
   color: #ffffff;
 }
@@ -723,15 +741,16 @@
 .trustContent {
   position: relative;
   z-index: 2;
-  padding: 65px;
+  padding: 48px;
 }
 
 .trustContent h2 {
   max-width: 600px;
-  margin: 18px 0;
-  font-size: clamp(35px, 4vw, 55px);
-  line-height: 1.02;
-  letter-spacing: -0.045em;
+  margin: 12px 0 16px;
+  font-size: clamp(32px, 4vw, 48px);
+  line-height: 1;
+  letter-spacing: -0.05em;
+  font-weight: 900;
 }
 
 .trustContent h2 span {
@@ -739,26 +758,27 @@
 }
 
 .trustContent > p {
-  max-width: 550px;
+  max-width: 520px;
   margin: 0;
   color: #94a3b8;
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 13px;
+  line-height: 1.7;
 }
 
 .trustPoints {
   display: flex;
   flex-wrap: wrap;
-  gap: 18px;
-  margin-top: 30px;
+  gap: 14px;
+  margin-top: 24px;
 }
 
 .trustPoints div {
   display: flex;
   align-items: center;
-  gap: 7px;
+  gap: 6px;
   color: #cbd5e1;
   font-size: 11px;
+  font-weight: 600;
 }
 
 .trustPoints svg {
@@ -776,9 +796,9 @@
 }
 
 .bigPercent {
-  font-size: clamp(70px, 8vw, 110px);
+  font-size: clamp(64px, 7vw, 96px);
   line-height: 0.9;
-  font-weight: 850;
+  font-weight: 900;
   letter-spacing: -0.07em;
 }
 
@@ -787,14 +807,14 @@
 }
 
 .trustVisual > p {
-  margin: 15px 0 30px;
+  margin: 12px 0 24px;
   color: #94a3b8;
   font-size: 12px;
 }
 
 .circle {
-  width: 74px;
-  height: 74px;
+  width: 64px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -809,7 +829,7 @@
 ========================= */
 
 .faq {
-  padding: 120px 0;
+  padding: 100px 0;
   background: #ffffff;
   border-top: 1px solid #e2e8f0;
 }
@@ -817,14 +837,14 @@
 .faqGrid {
   display: grid;
   grid-template-columns: 0.75fr 1.25fr;
-  gap: 100px;
+  gap: 80px;
 }
 
 .faqIntro {
-  max-width: 300px;
-  margin: 22px 0 25px;
+  max-width: 340px;
+  margin: 16px 0 24px;
   color: #64748b;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 1.7;
 }
 
@@ -841,22 +861,22 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  padding: 22px 0;
+  gap: 18px;
+  padding: 20px 0;
   border: 0;
   background: transparent;
   color: #0f172a;
   text-align: left;
   cursor: pointer;
   font: inherit;
-  font-size: 14px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 800;
 }
 
 .faqIcon {
   flex-shrink: 0;
-  width: 32px;
-  height: 32px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -885,8 +905,8 @@
   margin: 0;
   overflow: hidden;
   color: #64748b;
-  font-size: 13px;
-  line-height: 1.75;
+  font-size: 12px;
+  line-height: 1.7;
 }
 
 .faqItemOpen .faqAnswer {
@@ -894,7 +914,7 @@
 }
 
 .faqItemOpen .faqAnswer p {
-  padding-bottom: 22px;
+  padding-bottom: 20px;
 }
 
 /* =========================
@@ -902,50 +922,57 @@
 ========================= */
 
 .finalCta {
-  padding: 0 0 80px;
+  padding: 0 0 100px;
 }
 
 .finalCtaInner {
   display: flex;
   align-items: center;
-  gap: 22px;
-  padding: 30px;
+  gap: 18px;
+  padding: 28px;
   border: 1px solid #e2e8f0;
-  border-radius: 20px;
+  border-radius: 18px;
   background: #ffffff;
 }
 
 .ctaIcon {
   flex-shrink: 0;
-  width: 52px;
-  height: 52px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 14px;
+  border-radius: 12px;
   color: #d71920;
   background: rgba(215, 25, 32, 0.08);
 }
 
 .finalCtaInner > div:nth-child(2) {
   flex: 1;
+  min-width: 0;
 }
 
 .finalCtaInner span {
   color: #94a3b8;
-  font-size: 11px;
+  font-size: 10px;
   font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
 }
 
 .finalCtaInner h2 {
   margin: 4px 0 0;
-  font-size: 21px;
-  letter-spacing: -0.025em;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: -0.03em;
 }
 
 .finalCtaInner h2 span {
   color: #d71920;
   font-size: inherit;
+  text-transform: none;
+  letter-spacing: inherit;
+  font-weight: inherit;
 }
 
 /* =========================
@@ -955,12 +982,14 @@
 @media (max-width: 900px) {
   .heroGrid {
     grid-template-columns: 1fr;
-    gap: 30px;
-    padding: 70px 0;
+    gap: 28px;
+    padding: 70px 0 50px;
+    min-height: auto;
   }
 
   .heroContent {
     text-align: center;
+    max-width: 100%;
   }
 
   .heroText {
@@ -974,13 +1003,13 @@
   }
 
   .heroVisual {
-    min-height: 500px;
+    min-height: 460px;
   }
 
   .aboutGrid,
   .faqGrid {
     grid-template-columns: 1fr;
-    gap: 40px;
+    gap: 36px;
   }
 
   .aboutText {
@@ -993,7 +1022,7 @@
 
   .timeline {
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px 20px;
+    gap: 40px 16px;
   }
 
   .stepLine {
@@ -1009,7 +1038,7 @@
   }
 
   .trustVisual {
-    min-height: 300px;
+    min-height: 280px;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     border-left: 0;
   }
@@ -1037,22 +1066,22 @@
 
 @media (max-width: 600px) {
   .container {
-    width: min(100% - 24px, 1200px);
+    width: calc(100% - 28px);
   }
 
   .heroGrid {
     min-height: auto;
-    padding: 55px 0 40px;
+    padding: 48px 0 36px;
   }
 
   .heroTitle {
-    font-size: clamp(42px, 13vw, 62px);
+    font-size: 41px;
   }
 
   .heroText {
-    margin-top: 20px;
-    font-size: 15px;
-    line-height: 1.65;
+    margin-top: 18px;
+    font-size: 13px;
+    line-height: 1.7;
   }
 
   .heroActions {
@@ -1069,26 +1098,27 @@
   .heroTrust {
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
   }
 
   .heroVisual {
-    min-height: 410px;
-    margin-top: 10px;
+    min-height: 380px;
+    margin-top: 8px;
   }
 
   .visualCard {
-    min-height: 390px;
-    padding: 16px;
-    border-radius: 21px;
+    width: min(100%, 280px);
+    min-height: 400px;
+    padding: 18px;
+    border-radius: 18px;
   }
 
   .visualImage {
-    padding: 20px;
+    padding: 16px;
   }
 
   .visualImage img {
-    height: 280px;
+    height: 260px;
     width: 80%;
   }
 
@@ -1103,7 +1133,7 @@
   }
 
   .floatingCard {
-    padding: 9px 11px;
+    padding: 10px 12px;
   }
 
   .aboutSection,
@@ -1111,37 +1141,37 @@
   .process,
   .categories,
   .faq {
-    padding: 80px 0;
+    padding: 75px 0;
   }
 
   .sectionHeader {
     display: block;
-    margin-bottom: 35px;
+    margin-bottom: 32px;
   }
 
   .sectionHeader > p {
-    margin-top: 20px;
+    margin-top: 16px;
   }
 
   .sectionTitle {
-    font-size: 37px;
+    font-size: 36px;
   }
 
   .statsGrid {
-    margin-top: 45px;
+    margin-top: 36px;
   }
 
   .statCard {
-    min-height: 120px;
-    padding: 18px;
+    min-height: 110px;
+    padding: 16px;
   }
 
   .statCard:first-child {
-    padding-left: 18px;
+    padding-left: 16px;
   }
 
   .statNumber {
-    font-size: 27px;
+    font-size: 24px;
   }
 
   .advantagesGrid {
@@ -1150,8 +1180,8 @@
   }
 
   .advantageCard {
-    min-height: 235px;
-    padding: 22px;
+    min-height: auto;
+    padding: 20px;
   }
 
   .processHeader {
@@ -1160,19 +1190,19 @@
 
   .processBadge {
     width: fit-content;
-    margin-top: 22px;
+    margin-top: 18px;
   }
 
   .timeline {
     grid-template-columns: 1fr;
-    gap: 30px;
-    margin-top: 45px;
+    gap: 24px;
+    margin-top: 36px;
   }
 
   .step {
     display: grid;
     grid-template-columns: 42px 1fr;
-    gap: 16px;
+    gap: 14px;
     padding: 0;
   }
 
@@ -1186,7 +1216,7 @@
     top: 32px;
     left: 15px;
     width: 1px;
-    height: calc(100% + 30px);
+    height: calc(100% + 24px);
     margin: 0;
   }
 
@@ -1199,40 +1229,40 @@
   }
 
   .stepContent h3 {
-    margin-top: 5px;
+    margin-top: 4px;
   }
 
   .trustSection {
-    padding-bottom: 80px;
+    padding-bottom: 75px;
   }
 
   .trustContent {
-    padding: 35px 25px;
+    padding: 32px 22px;
   }
 
   .trustContent h2 {
-    font-size: 37px;
+    font-size: 36px;
   }
 
   .trustPoints {
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
   }
 
   .trustVisual {
-    min-height: 250px;
+    min-height: 240px;
   }
 
   .bigPercent {
-    font-size: 76px;
+    font-size: 72px;
   }
 
   .faqGrid {
-    gap: 45px;
+    gap: 36px;
   }
 
   .finalCta {
-    padding-bottom: 40px;
+    padding-bottom: 64px;
   }
 
   .finalCtaInner {
@@ -1242,7 +1272,7 @@
   }
 
   .finalCtaInner h2 {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -1252,27 +1282,27 @@
 
 @media (max-width: 380px) {
   .container {
-    width: calc(100% - 16px);
+    width: calc(100% - 20px);
   }
 
   .heroTitle {
-    font-size: 40px;
+    font-size: 36px;
   }
 
   .heroVisual {
-    min-height: 360px;
+    min-height: 340px;
   }
 
   .visualCard {
-    min-height: 350px;
+    min-height: 360px;
   }
 
   .visualImage img {
-    height: 240px;
+    height: 220px;
   }
 
   .floatingCard {
-    transform: scale(0.85);
+    transform: scale(0.9);
   }
 
   .floatingTop {
@@ -1288,11 +1318,11 @@
   }
 
   .statCard {
-    padding: 15px 10px;
+    padding: 14px 10px;
   }
 
   .statNumber {
-    font-size: 24px;
+    font-size: 22px;
   }
 
   .statLabel {
@@ -1300,6 +1330,6 @@
   }
 
   .sectionTitle {
-    font-size: 33px;
+    font-size: 32px;
   }
 }
