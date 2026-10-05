@@ -313,7 +313,77 @@
       "titleAccent": " mos mahsulotni toping.",
       "button": "Katalogga o‘tish"
     }
-  }
+  },
+  
+  "delivery": {
+    "hero": {
+      "eyebrow": "Yetkazib berish",
+      "title": "Yetkazib berish",
+      "titleAccent": "ortiqcha kutishlarsiz.",
+      "text": "Motor moylarini onlayn buyurtma qiling — biz buyurtmangizni ehtiyotkorlik bilan tayyorlaymiz, tafsilotlarni tasdiqlaymiz va yetkazib berishga topshiramiz.",
+      "catalog": "Katalogni ko‘rish",
+      "contact": "Bog‘lanish",
+      "meta1": "Toshkent va viloyatlar",
+      "meta2": "Ehtiyotkor qadoqlash",
+      "meta3": "Buyurtmani kuzatish",
+      "mapLabel": "Yetkazib berish hududi",
+      "mapTitle": "Toshkent",
+      "mapStatus": "Yetkazib berish mavjud",
+      "floatingTitle": "Shahar bo‘ylab yetkazib berish",
+      "floatingText": "Buyurtmani tez yetkazish"
+    },
+
+    "coverage": {
+      "eyebrow": "Geografiya",
+      "title": "Yetkazib beramiz",
+      "titleAccent": " siz turgan joyga.",
+      "text": "Toshkent bo‘ylab ishlaymiz va O‘zbekistonning boshqa shaharlariga ham mahsulot yuboramiz.",
+      "tashkentMap": "Toshkent xaritasi",
+      "regionMap": "O‘zbekiston hududlari",
+      "currentZone": "Markaziy hudud",
+      "deliveryZone": "Joriy hudud",
+      "tashkent": "Toshkent",
+      "uzbekistan": "O‘zbekiston",
+      "infoTitle": "Yetkazib berish hududi aniqlanadi",
+      "infoText": "Aniq narx va yetkazib berish vaqti manzil va tanlangan usulga bog‘liq.",
+      "zones": {
+        "tashkent": {
+          "title": "Toshkent",
+          "text": "Shahar bo‘ylab yetkazib berish"
+        },
+        "regions": {
+          "title": "Hududlar",
+          "text": "O‘zbekiston bo‘ylab jo‘natish"
+        }
+      }
+    },
+
+    "process": {
+      "eyebrow": "Qanday ishlaydi",
+      "title": "Buyurtmadan",
+      "titleAccent": " eshikkacha.",
+      "badge": "Oddiy jarayon",
+      "steps": {
+        "order": {
+          "title": "Buyurtma berish",
+          "text": "Kerakli mahsulotlarni tanlaysiz va buyurtma yuborasiz."
+        },
+        "confirm": {
+          "title": "Tafsilotlarni tasdiqlash",
+          "text": "Siz bilan bog‘lanib, manzil, miqdor va yetkazib berish usulini aniqlaymiz."
+        },
+        "pack": {
+          "title": "Buyurtmani tayyorlash",
+          "text": "Mahsulotlarni tekshiramiz va jo‘natishdan oldin ehtiyotkorlik bilan qadoqlaymiz."
+        },
+        "delivery": {
+          "title": "Yetkazib berish",
+          "text": "Kuryer yoki transport kompaniyasi buyurtmani qabul qilib, sizga yetkazadi."
+        }
+      }
+    }
+  
+}
 
 
 
