@@ -9,6 +9,7 @@ import Catalog from './pages/Catalog/Catalog'
 import Product from './pages/Product/Product'
 import About from './pages/About/About'
 import Delivery from './pages/Delivery/Delivery'
+import Contacts from './pages/Contacts/Contacts'
 import { CartProvider } from './context/CartContext'
 import Cart from './pages/Cart/Cart'
 function PlaceholderPage({ title }) {
@@ -65,9 +66,7 @@ function App() {
 
             <Route
               path="/contacts"
-              element={
-                <PlaceholderPage title="Контакты" />
-              }
+              element={<Contacts />}
             />
 
             <Route path="/cart" element={<Cart />} />

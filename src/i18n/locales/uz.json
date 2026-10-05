@@ -332,7 +332,35 @@
       "floatingTitle": "Shahar bo‘ylab yetkazib berish",
       "floatingText": "Buyurtmani tez yetkazish"
     },
+"zones": {
+  "tashkent": {
+    "title": "Toshkent",
+    "text": "Toshkent bo'ylab siz uchun qulay vaqtda yetkazib beramiz."
+  },
+  "regions": {
+    "title": "O'zbekiston hududlari",
+    "text": "Buyurtmalarni O'zbekistonning boshqa shaharlari va hududlariga ham yuboramiz."
+  }
+},
 
+"steps": {
+  "order": {
+    "title": "Buyurtma bering",
+    "text": "Katalogdan kerakli mahsulotlarni tanlang va savatga qo'shing."
+  },
+  "confirm": {
+    "title": "Tasdiqlash",
+    "text": "Buyurtma va yetkazib berish manzilini aniqlashtirish uchun siz bilan bog'lanamiz."
+  },
+  "pack": {
+    "title": "Buyurtmani tayyorlaymiz",
+    "text": "Mahsulotlarni ehtiyotkorlik bilan qadoqlab, jo'natishga tayyorlaymiz."
+  },
+  "delivery": {
+    "title": "Buyurtmani qabul qiling",
+    "text": "Kuryer buyurtmangizni kelishilgan vaqtda ko'rsatilgan manzilga yetkazib beradi."
+  }
+},
     "coverage": {
       "eyebrow": "Geografiya",
       "title": "Yetkazib beramiz",
@@ -383,6 +411,89 @@
       }
     }
   
+},
+"contacts": {
+  "hero": {
+    "eyebrow": "Biz bilan bog‘lanish",
+    "title": "Biz doimo",
+    "titleAccent": "aloqadamiz",
+    "text": "Yozing yoki qo‘ng‘iroq qiling — buyurtma, yetkazib berish va ulgurji shartlar bo‘yicha javob beramiz. Odatda ish kuni ichida javob qaytaramiz.",
+    "meta1": "Kun ichida javob",
+    "meta2": "Telefon va Telegram",
+    "meta3": "Toshkent ofisi"
+  },
+  "channels": {
+    "phone": {
+      "label": "Telefon",
+      "value": "+998 90 123 45 67",
+      "hint": "Har kuni"
+    },
+    "telegram": {
+      "label": "Telegram",
+      "value": "@yourshop",
+      "hint": "Tez javob"
+    },
+    "email": {
+      "label": "Email",
+      "value": "info@example.uz",
+      "hint": "Hujjatlar va ulgurji"
+    },
+    "address": {
+      "label": "Manzil",
+      "value": "Toshkent, Namunaviy ko‘chasi 12",
+      "hint": "Olib ketish"
+    }
+  },
+  "form": {
+    "status": "Menejer onlayn",
+    "title": "Bizga yozing",
+    "subtitle": "Kontaktlaringizni qoldiring — qo‘ng‘iroq qilamiz yoki messenjerda javob beramiz.",
+    "name": "Ism",
+    "namePlaceholder": "Sizga qanday murojaat qilaylik",
+    "phone": "Telefon",
+    "topic": "Mavzu",
+    "topics": {
+      "order": "Buyurtma",
+      "delivery": "Yetkazib berish",
+      "wholesale": "Ulgurji",
+      "other": "Boshqa"
+    },
+    "message": "Xabar",
+    "messagePlaceholder": "Savolingizni qisqacha yozing",
+    "submit": "Yuborish",
+    "note": "Tugmani bosish orqali so‘rovingizga javob berish uchun ma’lumotlaringizni qayta ishlashga rozilik bildirasiz.",
+    "successTitle": "Ariza yuborildi",
+    "successText": "Tez orada ish vaqtida siz bilan bog‘lanamiz.",
+    "again": "Yana yuborish"
+  },
+  "map": {
+    "title": "Ofisimiz xaritada",
+    "open": "Xaritani ochish",
+    "label": "Joylashuv",
+    "place": "Toshkent",
+    "floatingTitle": "Olib ketish",
+    "floatingText": "Du–Sha yozuv bo‘yicha"
+  },
+  "hours": {
+    "title": "Ish jadvali",
+    "now": "Hozir ochiq",
+    "monFri": "Du – Ju",
+    "sat": "Shanba",
+    "sun": "Yakshanba",
+    "closed": "Dam olish"
+  },
+  "quick": {
+    "call": "Qo‘ng‘iroq qilish",
+    "chat": "Chatga yozish",
+    "chatHint": "Telegram · tez javob"
+  },
+  "sideNote": "Tashrifdan oldin vaqtni kelishib olish yaxshiroq — buyurtmani kutmasdan tayyorlab qo‘yamiz.",
+  "cta": {
+    "eyebrow": "Tanlashga tayyormisiz",
+    "title": "Katalogga ",
+    "titleAccent": "o‘tish",
+    "button": "Mahsulotlarni ko‘rish"
+  }
 }
 
 
